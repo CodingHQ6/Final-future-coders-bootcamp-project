@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Changing the page to light or dark mode based on system settings</h1>
+
+    <!-- signup  -->
+    <form>
+        <input type="text" placeholder="enter name" id="userName">
+        <input type="email" name="" placeholder="enter email" id="email">
+        <input type="password" name="" placeholder="enter password" id="password">
+        <input type="submit" name="" id="submit">
+    </form>
+    <br><br>
+    <!-- login -->
+    <form>
+        <!-- <input type="text" placeholder="enter name" id="userName"> -->
+        <input type="email" name="" placeholder="enter email" id="email2">
+        <input type="password" name="" placeholder="enter password" id="password2">
+        <input type="submit" name="" id="login" value="login">
+    </form>
+    <p id="success"></p>
+
+    <script>
+        let userName = document.getElementById("userName");
+        let userEmail = document.getElementById("email");
+        let userPassword = document.getElementById("password");
+        let submit = document.getElementById("submit");
+
+        // signin target
+        let userEmailLogin = document.getElementById("email2");
+        let userPasswordLogin = document.getElementById("password2");
+        let login = document.getElementById("login");
+        let success = document.getElementById("success");
+
+        submit.addEventListener("click", (e) => {
+            e.preventDefault();
+            // console.log(e);
+            userNameValue = userName.value;
+            userEmailValue = userEmail.value;
+            userPasswordValue = userPassword.value;
+            console.log([userNameValue, userEmailValue, userPasswordValue]);
+            localStorage.setItem("userName", userNameValue);
+            localStorage.setItem("userEmail", userEmailValue);
+            localStorage.setItem("userPassword", userPasswordValue);
+        });
+
+        login.addEventListener("click", (e) => {
+            e.preventDefault();
+            let userEmailLoginValue = userEmailLogin.value;
+            console.log(userEmailLogin.value);
+            let userPasswordLoginValue = userPasswordLogin.value;
+            console.log(userPasswordLogin.value);
+
+            let localDataEmail = localStorage.getItem("userEmail");
+            console.log(localDataEmail);
+            let localDataPassword = localStorage.getItem("userPassword");
+            console.log(localDataPassword);
+
+            if
+                (userEmailLoginValue === localDataEmail
+                && userPasswordLoginValue === localDataPassword) {
+                // success.textContent = "You are loged in"
+                window.open("index.html");
+                // location.href("index.html");
+            } else {
+                success.textContent = "we do not recognize you"
+            }
+        })
+    </script>
+</body>
+
+</html>
