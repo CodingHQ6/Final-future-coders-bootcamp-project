@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prada's Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="Assets/css/TAILWIND/tailwind.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+
+        }
+    </style>
+</head>
+
+<body class="bg-white-200 text-gray-900">
+
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-4">
+        <div class="flex justify-between items-center">
+            <nav class="text-gray-500 text-xl mb-4">
+                <ol class="list-reset flex ">
+                    <li><a href="../index.html" class="hover:underline text-md">Home</a></li>
+                    <li><span class="mx-2">/</span></li>
+                    <li class="text-gray-900 font-bold">My Account</li>
+
+        </div>
+        </ol>
+        </nav>
+        <div class="flex flex-col md:flex-row">
+            <!-- Sidebar -->
+            <aside class="md:w-1/4 mb-8 md:mb-0">
+                <ul class="space-y-2">
+                    <li class="text-gray-900 font-bold ">Manage My Account</li>
+                    <li class=" text-red-600 pl-4"><a href="#" class="bock">My Profile</a></li>
+                    <li class="text-gray-600 pl-4"><a href="#" clas="block">Address Book</a></li>
+                    <li class="text-gray-600 pl-4"><a href="#" clss="block">My Payment Options</a></li>
+                    <li class="text-gray-900 font-bold">My Orders</li>
+                    <li class="text-gray-600 pl-4"><a href="#">My Returns</a></li>
+                    <li class="text-gray-600 pl-4"><a href="#">My Cancellations</a></li>
+                    <li class="text-gray-900 font-bold"><a href="#">My Wishlist</a></li>
+                </ul>
+            </aside>
+
+            <!-- Profile Edit Form -->
+            <section class="md:w-3/4 bg-white p-8 rounded-lg shadow-md">
+                <h2 class="text-xl text-red-600 font-semibold mb-3">Edit Your Profile</h2>
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+                            <input type="text" id="first-name"
+                                class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Md">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                            <input type="text" id="last-name"
+                                class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Rimel">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email"
+                                class="mt-1 block w-full p-2 border border-gray-300 rounded-md  disabled  "
+                                placeholder="rimel111@gmail.com">
+                        </div>
+                        <div>
+                            <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
+                            <input type="text" id="address"
+                                class="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+                                placeholder="Kingston, 5236, United State">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Password Changes</h3>
+                    <div class="mb-4">
+                        <label for="current-password" class="block text-sm font-medium text-gray-700">Current
+                            Password</label>
+                        <input type="password" id="current-password"
+                            class="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+                            placeholder="Kingston, 5236, United States">
+                    </div>
+                    <div class="mb-4">
+                        <label for="new-password" class="block text-sm font-medium text-gray-700">New Password</label>
+                        <input type="password" id="new-password"
+                            class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder=" New Password">
+                    </div>
+                    <div class="mb-4">
+                        <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm New
+                            Password</label>
+                        <input type="password" id="confirm-password"
+                            class="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+                            placeholder="Confirm New Password">
+                    </div>
+                    <div class="flex space-x-4 flex justify-end">
+
+                        <button type="reset" class="bg-white text-black px-6 py-2 rounded-sm">Cancel</button>
+                        <button type="submit" class="bg-red-600 text-white px-6 py-2 rounded-sm">Save Changes</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
