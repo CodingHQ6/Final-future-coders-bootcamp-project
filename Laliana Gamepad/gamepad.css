@@ -1,0 +1,47 @@
+/* stlyling the whole body */
+.body {
+  /* margin-left: 7%;
+    margin-right: 7%; */
+}
+
+.card {
+  background-color: #f4f4f4;
+}
+
+/* styling the pictures */
+#pic {
+  background-color: #f5f5f5;
+  border: none;
+}
+
+/* styling the favourity section */
+#fave {
+  border: none;
+}
+
+/* giving stars and styling it */
+#star {
+  color: gold;
+}
+/* size */
+button:hover {
+  border: none;
+  color: white;
+  background-color: #d10f0f;
+}
+.btn {
+  border: 1px solid black;
+}
+.btn:hover {
+  background-color: red;
+  color: black;
+}
+/* add to cart */
+.cards {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 1, 8rem 1, 9rem;
+  font-size: 15px;
+}
