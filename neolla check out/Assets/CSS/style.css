@@ -1,0 +1,15 @@
+h1{
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}body {
+    background-color: #fff;
+}input{
+    /* padding-right: 50px; */
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+}
+label{
+    color: grey;
+
+}
