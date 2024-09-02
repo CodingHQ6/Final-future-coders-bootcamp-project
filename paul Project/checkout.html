@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assests/style/Cart.css">
+
+    <!-- fontawesome here -->
+    <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/solid.css">
+
+    <!-- bootsrtap  -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+    <script defer src="../assets/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body id="checkout-page">
+
+    <nav class="navbar navbar-expand-md navBar bg-light navbar-light fixed-top">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="../index.html">
+                <h3>QuickCart</h3>
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="navbar-links nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-links nav-link" href="../JOY 2/joy.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-links nav-link" href="../aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-links nav-link" href="../courses.html">Signup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-links nav-link" href="../blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- join us button  -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <input type="text" name="" id="" class="input-navbar" placeholder="what are you looking for?"
+                    style="width: 13rem;">
+                <a href="../wishlist.html" class="nav-link" style="padding-left: 1rem; color: gray;"><span
+                        class="fa fa-heart"></span></a>
+                <a href="Cart.html" class="nav-link" style="padding-left: 1rem; color: gray;"><span
+                        class="fa fa-cart-plus"></span></a>
+                <a href="../Dellan's Folder/Prada.html" class="nav-link" style="padding-left: 1rem; color: gray;"><span
+                        class="fa fa-user"></span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- checkout details  -->
+    <div class="container section-margin-top">
+        <p><span style="color: rgb(204, 184, 184);"> Account/ My Account / Product / view Cart/ </span>checkout </p>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h1> Billing Details </h1><br>
+                <label for="First Name">First Name</label><br>
+                <input type="text" class="input"><br><br>
+                <label for="Company Name">Company Name</label><br>
+                <input type="text" class="input"><br><br>
+                <label for="Street Address">Street Adress</label><br>
+                <input type="text" class="input"><br><br>
+                <label for="Apartment,floor,etc(optional)">Apartment,floor,etc(optional)</label><br>
+                <input type="text" class="input"><br><br>
+                <label for="Town/City">Town/City</label><br>
+                <input type="text" class="input"><br><br>
+                <label for="Phone Number">Phone Number</label><br>
+                <input type="tel" class="input"><br><br>
+                <label for="Email">Email Address</label><br>
+                <input type="email" class="input"><br><br>
+                <input type="checkbox" id="checkbox"> Save the information for faster check-out next time
+                <br><br><br><br>
+            </div>
+            <div class="col-md-6 col-sm-12"><br><br><br>
+                <div class="container">
+                    <div id="">
+
+                    </div>
+                    <div id="checkout">
+
+                    </div>
+                    <div class="d-flex">
+                        <!-- <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>Price: $${product.price}</p>
+                        <p>Quantity: ${item.quantity}</p>
+                        <p>Subtotal: $${(product.price * item.quantity).toFixed(2)}</p> -->
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-6">
+                            <p>Subtotal:</p>
+                        </div>
+                        <div class="col-6">
+                            <p id="total3" class="text">$0</p>
+                        </div>
+                    </div> -->
+                    <hr>
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Shipping:</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="text">Free</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Total:</p>
+                        </div>
+                        <div class="col-6">
+                            <p id="totalAmount" class="text"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="radio" name="payment"> Bank <br><br>
+                            <input type="radio" name="payment"> Cash on delivery
+                        </div>
+                        <div></div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-8">
+                            <input type="text" placeholder="   Coupon Code" class="input1">
+                        </div>
+                        <div class="col-4">
+                            <button class="btn button1 bg-danger" style="color: white;">Apply
+                                Coupon</button>
+                        </div>
+                    </div><br>
+                    <button class="btn button1 bg-danger" id="confirmOrder" style="width: 35%; color: white;">Place
+                        Order</button>
+                </div><br>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <!-- the reductions price link -->
+                <div class="col-md-3 mb-4">
+                    <h5>Exclusive</h5>
+                    <p>Subscribe</p>
+                    <p>Get 10% off your first order</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-outline-light ms-2">></button>
+                    </form>
+                </div>
+
+                <!-- the support links -->
+                <div class="col-md-3 mb-4">
+                    <h5>Support</h5>
+                    <p>DOUALA, YAOUNDE</p>
+                    <p>Email: bricetepdjip5@gmail.com</p>
+                    <p>Phone: +237 671503802</p>
+                </div>
+
+                <!-- the Account links -->
+                <div class="col-md-2 mb-4">
+                    <h5>Account</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">My Account</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Login / Register</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Cart</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Wishlist</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Shop</a></li>
+                    </ul>
+                </div>
+
+                <!-- the quick links -->
+                <div class="col-md-2 mb-4">
+                    <h5>Quick Link</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Terms Of Use</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- the app Download buttons -->
+                <div class="col-md-2">
+                    <h5>Download App</h5>
+                    <div class="mb-2">
+                        <img src="" alt="QR Code" class="img-fluid">
+                    </div>
+                    <div class="d-flex">
+                        <button class="bnt"><a href="#" class="text-light text-decoration-none me-3"><i
+                                    class="fab fa-google-play"></i> </a></button>
+                        <button class="bnt"><a href="#" class="text-light text-decoration-none me-3"><i
+                                    class="fab fa-apple">
+                                </i> </a></button>
+                    </div>
+
+                    <!-- the icons -->
+                    <div class="mt-3">
+                        <a href="#" class="text-light text-decoration-none me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light text-decoration-none me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light text-decoration-none me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light text-decoration-none"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h5 style="text-align: center; color: grey;" class="pb-3">Copyright@Quick Cart</h5>
+        </div>
+    </footer>
+    <script src="Assests/javascript/app.js"></script>
+    <script src="Assests/javascript/index.js"></script>
+</body>
+
+</html>

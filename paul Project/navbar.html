@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="Assests/style/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Assests/fontawesome/css/all.css">
+    <link rel="stylesheet" href="Assests/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="Assests/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="Assests/fontawesome/css/solid.css">
+    <style>
+        .searchbox {
+            display: flex;
+            padding: 5px;
+            border-radius: 5px;
+            width: 18em;
+            background-color: color-mix(in srgb, white 97%, black 3%);
+        }
+
+        input {
+            border: none;
+            width: 15em;
+            background-color: color-mix(in srgb, white 97%, black 3%);
+        }
+
+        .nav-item1 {
+            padding: 10px;
+        }
+
+        .navig {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm container ">
+        <div class="navbar-nav justify-content-right">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="to">
+            <span class="navbar-toggler-icon"></span></button>
+        <ul style="list-style: none;"><br>
+            <a href="Cart.html" class="nav-link" id="a1"></a>
+            <a href="Cart.html" class="nav-link" id="a2"></a>
+            <a href="Cart.html" class="nav-link" id="a3"></a>
+            <a href="Cart.html" class="nav-link" id="a4"></a>
+           </ul><br>
+        </div><br>
+        <div class="nav-brand">
+            <h2 style="margin-right: 5px;">QuickCart</h2>
+        </div>
+        </div>
+        <div class=" collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item1"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item1"><a href="" class="nav-link">Contact</a></li>
+                <li class="nav-item1"><a href="" class="nav-link">About</a></li>
+                <li class="nav-item1"><a href="" class="nav-link">Sign Up</a></li>
+            </ul>
+        </div>
+        <!-- <div class="navbar-nav justify-content-end"> -->
+        <div class="searchbox  justify-content-end nav-item1">
+            <input type="search" placeholder="   What are you looking for?"><span class="fa fa-search"
+                style="margin-top: 5px;"></span>
+        </div>
+        <div class="justify-content-end nav-item1">
+            <span class="fa fa-heart justify-content-end"></span>
+        </div>
+        <div class="justify-content-end nav-item1">
+            <span class="fa fa-shopping-cart  justify-content-end"></span>
+        </div>
+        <div class="justify-content-end nav-item1">
+            <span class="fa fa-user  justify-content-end"></span>
+        </div>
+    </nav>
+</body>
+<script src="Assests/javascript/navbar.js"></script>
+<footer>
+
+</footer>
+</html>

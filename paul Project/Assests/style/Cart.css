@@ -1,0 +1,82 @@
+.counter{
+    background-color: blue;
+}
+.button{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.card1{
+    margin: auto;
+    box-shadow: 5px 5px 5px color-mix(in srgb, black 5%, white 95%);
+}
+
+.button1{
+    border-radius: 3px;
+    color: white;
+    margin-left: 10px;
+    border: none;
+}
+.button2{
+    border-radius: 3px;
+    color: white;
+  width: 70%;
+  margin-left: 65px;
+}
+.button4{
+    width: 25%;
+    padding: 5px;
+    height: 80px;
+    border: 1px solid black;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.input1{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 250px;
+    height: 200px;
+}
+.div{
+    display: flex;
+    width: 80%;
+}
+.para{
+    margin-top: 50px;
+}
+.para1{
+    margin-left: 80px;
+}
+.para2{
+    margin-top: 50px;
+}
+.card2{
+    border: 1px solid black;
+}
+.text{
+    text-align: end;
+}
+.container1{
+    margin-left: 60px;
+}
+.button3{
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+}
+.Gamepad{
+    margin-top: 50px;
+}
+.input {
+    border: none;
+    background-color: #f5f5f5;
+    width: 70%;
+    height: 2em;
+}
+
+#input {
+    border: none;
+    width: 15em;
+    background-color: color-mix(in srgb, white 97%, black 3%);
+}
